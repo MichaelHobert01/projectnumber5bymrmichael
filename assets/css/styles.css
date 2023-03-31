@@ -1,0 +1,85 @@
+/* sets the display of rows to flex container and centers it horizontally */
+div.row {
+    display: flex;
+    justify-content: center; 
+}
+/*Adds text alignment and styling for h1*/
+h1 {
+    text-align: center;
+    font-family: monospace;
+    font-weight: 200;
+    font-size: 50px;
+}
+/* Adds background color, font color and border properties for the save buttons */
+.col-2.saveBtn {
+    background-color: blue;
+    color: white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+/* Adds styling for the hour column */ 
+.col-2.hour {
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    width: 50px;
+    text-align: right;
+}
+/* Changes the size of the text input area */ 
+.col-8.description {
+    width: 450px; 
+    height: 60px;
+}
+/* Changes the size of the hour column */
+.div.col-2.hour {
+    border-top: 10px;
+    border-bottom: 10px;
+}
+/* The background color connected to JS to represent what time of the day it is. */
+
+.past {
+ background-color: grey;
+}
+
+.present {
+ background-color: red;
+}
+
+.future {
+ background-color: lightgreen;
+}
+/* Tells you the current day and is connected to JS */ 
+#currentDay {
+    display: flex;
+    justify-content: center;
+    font-family: monospace;
+    font-size: 20px;
+}
+/* Seperates the top content from the main content, is a big black line */ 
+#seperator {
+    background-color: black;
+    width: 100%
+    height 5px;
+    border: 2px solid black;
+}
+/* Had to give it a little seperation to make the site look cleaner */ 
+.container {
+    padding-top: 20px;
+}
+
+/* added a query to make it look somewhat better on mobile.*/
+@media only screen and (max-width: 600px) {
+    .row {
+      flex-direction: column;
+      align-items: center;
+    }
+    .col-2, .col-8 {
+      width: 20%;
+      margin-bottom: 10px;
+    }
+    .col-2 {
+      text-align: center;
+    }
+    .saveBtn {
+      border-radius: 10px;
+    }
+  }
